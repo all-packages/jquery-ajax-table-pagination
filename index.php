@@ -64,6 +64,7 @@ and open the template in the editor.
         <script>
                $('.datatable').customeDataTable({
                    searchcolumns : [],
+				   data : {},
                    orderby : 0,
                    headers : ['Sno'],
                    actionurl : "sampledata.php",
@@ -75,6 +76,7 @@ and open the template in the editor.
                
                $('.datatable1').customeDataTable({
                    tableIndex : 2,
+				   data : {},
                    searchcolumns : [],
                    orderby : 0,
                    headers : ['Sno'],
@@ -89,6 +91,7 @@ and open the template in the editor.
                
                $('.datatable2').customeDataTable({
                    tableIndex : 3,
+				   data : {},
                    searchcolumns : [],
                    orderby : 0,
                    headers : [],
@@ -101,7 +104,8 @@ and open the template in the editor.
 
                $('.datatable3').customeDataTable({
                    tableIndex : 4,
-                   searchcolumns : [],
+				   data : {},
+                   searchcolumns : ['column1'],
                    orderby : 0,
                    headers : [],
                    actionurl : "tablestructure.php",
@@ -114,7 +118,8 @@ and open the template in the editor.
 
                $('.datatable4').customeDataTable({
                    tableIndex : 5,
-                   searchcolumns : [],
+				   data : {},
+                   searchcolumns : ['column1'],
                    orderby : 0,
                    headers : [],
                    actionurl : "",
