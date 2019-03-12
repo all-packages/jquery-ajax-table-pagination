@@ -90,6 +90,7 @@ function datatable(response){
                    serverpagination: false // true or false
                });
 ```
+
 ```html
 function datatable(response){
                    var jsonParse = JSON.parse(response);
@@ -100,7 +101,7 @@ function datatable(response){
                    $table += '</tbody>';
                    return $table;
                }
-               ```
+```
                
 **Data Type - Table, Html table prepared from server side per each page**
 
@@ -136,6 +137,7 @@ $('.datatable3').customeDataTable({
                    serverpagination: false // true or false
                });
 ```
+
 **Data Type - local, Already prepared html table means no ajax call required**
 
 ```html
