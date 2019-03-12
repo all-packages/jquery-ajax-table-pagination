@@ -45,7 +45,7 @@ $('.datatable').customeDataTable({
 
 Examples
 --------
-**Data Type - Json, every page data coming from server using ajax call**
+**Structure - Json, every page data coming from server using ajax call**
 
 ```html
 $('.datatable').customeDataTable({
@@ -72,7 +72,7 @@ function datatable(response){
                }
 ```
 
- **Data Type - JSON, FULL DATA in single ajax call from server** 
+ **Structure - JSON, FULL DATA in single ajax call from server** 
  
  ```html
  $('.datatable1').customeDataTable({
@@ -103,7 +103,7 @@ function datatable(response){
                }
 ```
                
-**Data Type - Table, Html table prepared from server side per each page**
+**Structure - Table, Html table prepared from server side per each page**
 
 ```html
 $('.datatable2').customeDataTable({
@@ -120,7 +120,7 @@ $('.datatable2').customeDataTable({
                });
 ```
 
-**Data Type - Table, Html table prepared from server side in sigle ajax call**
+**Structure - Table, Html table prepared from server side in sigle ajax call**
 
 ```html
 $('.datatable3').customeDataTable({
@@ -138,7 +138,7 @@ $('.datatable3').customeDataTable({
                });
 ```
 
-**Data Type - local, Already prepared html table means no ajax call required**
+**Structure - local, Already prepared html table means no ajax call required**
 
 ```html
 $('.datatable4').customeDataTable({
