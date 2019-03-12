@@ -41,4 +41,123 @@ $('.datatable').customeDataTable({
 });
 ```
 
+**Using this plugin you can create multiple pagination tables in a single page** 
+
+Examples
+--------
+**Data Type - Json, every page data coming from server using ajax call**
+
+```html
+$('.datatable').customeDataTable({
+                   searchcolumns : [],
+				   data : {},
+                   orderby : 0,
+                   headers : ['Sno'],
+                   actionurl : "sampledata.php",
+                   actiontype : "post",
+                   tableprepare : "datatable",
+                   perpage : 3,
+                   structure : 'json'
+               });
+```
+```html
+function datatable(response){
+                   var jsonParse = JSON.parse(response);
+                   $table = '<tbody>';
+                   $.each(jsonParse.data,function(key,value){
+                    $table += '<tr><td>'+value._id+'</td></tr>';   
+                   });
+                   $table += '</tbody>';
+                   return $table;
+               }
+               ```
+ **Data Type - JSON, FULL DATA in single ajax call from server ** 
+ 
+ ```html
+ $('.datatable1').customeDataTable({
+                   tableIndex : 2,
+				   data : {},
+                   searchcolumns : [],
+                   orderby : 0,
+                   headers : ['Sno'],
+                   actionurl : "sampledata.php",
+                   actiontype : "post",
+                   tableprepare : "datatable",
+                   perpage : 2,
+                   structure : 'json',
+                   //localpagination: true, // true or false it will use in full data get from server at on time.
+                   serverpagination: false // true or false
+               });
+```
+```html
+function datatable(response){
+                   var jsonParse = JSON.parse(response);
+                   $table = '<tbody>';
+                   $.each(jsonParse.data,function(key,value){
+                    $table += '<tr><td>'+value._id+'</td></tr>';   
+                   });
+                   $table += '</tbody>';
+                   return $table;
+               }
+               ```
+               
+**Data Type - Table, Html table prepared from server side per each page**
+
+```html
+$('.datatable2').customeDataTable({
+                   tableIndex : 3,
+				   data : {},
+                   searchcolumns : [],
+                   orderby : 0,
+                   headers : [],
+                   actionurl : "tablestructure.php",
+                   actiontype : "post",
+                   tableprepare : "datatable",
+                   perpage : 1,
+                   structure : 'table'
+               });
+```
+**Data Type - Table, Html table prepared from server side in sigle ajax call**
+
+```html
+$('.datatable3').customeDataTable({
+                   tableIndex : 4,
+				   data : {},
+                   searchcolumns : ['column1'],
+                   orderby : 0,
+                   headers : [],
+                   actionurl : "tablestructure.php",
+                   actiontype : "post",
+                   tableprepare : "datatable",
+                   perpage : 1,
+                   structure : 'table',
+                   serverpagination: false // true or false
+               });
+```
+**Data Type - local, Already prepared html table means no ajax call required**
+
+```html
+$('.datatable4').customeDataTable({
+                   tableIndex : 5,
+				   data : {},
+                   searchcolumns : ['column1'],
+                   orderby : 0,
+                   headers : [],
+                   actionurl : "",
+                   actiontype : "",
+                   tableprepare : "",
+                   perpage : 1,
+                   structure : 'local',
+                   serverpagination: false // true or false
+               });
+```
+
+
+
+
+
+
+
+
+
 
