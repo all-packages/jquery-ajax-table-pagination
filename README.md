@@ -21,7 +21,9 @@ Integration
 <script src="js/jquery.min.js"></script>
 <script src="js/globaldatatables.min.js"></script>
 ```
-**Add this code in your footer or any where you want**
+
+**Step 2**
+Add this code in your footer or any where you want
 ```html
 $('.datatable').customeDataTable({
         tableIndex : 1, // Index for each table in html page. Using this you can create multiple tables in same page
