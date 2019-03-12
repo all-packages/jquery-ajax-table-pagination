@@ -70,7 +70,8 @@ function datatable(response){
                    $table += '</tbody>';
                    return $table;
                }
-               ```
+```
+
  **Data Type - JSON, FULL DATA in single ajax call from server** 
  
  ```html
