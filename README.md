@@ -52,7 +52,7 @@ Examples
 ```html
 $('.datatable').customeDataTable({
                    searchcolumns : [],
-				   data : {},
+		   data : {},
                    orderby : 0,
                    headers : ['Sno'],
                    actionurl : "sampledata.php",
@@ -79,7 +79,7 @@ function datatable(response){
  ```html
  $('.datatable1').customeDataTable({
                    tableIndex : 2,
-				   data : {},
+		   data : {},
                    searchcolumns : [],
                    orderby : 0,
                    headers : ['Sno'],
@@ -110,7 +110,7 @@ function datatable(response){
 ```html
 $('.datatable2').customeDataTable({
                    tableIndex : 3,
-				   data : {},
+		   data : {},
                    searchcolumns : [],
                    orderby : 0,
                    headers : [],
@@ -127,7 +127,7 @@ $('.datatable2').customeDataTable({
 ```html
 $('.datatable3').customeDataTable({
                    tableIndex : 4,
-				   data : {},
+		   data : {},
                    searchcolumns : ['column1'],
                    orderby : 0,
                    headers : [],
@@ -145,7 +145,7 @@ $('.datatable3').customeDataTable({
 ```html
 $('.datatable4').customeDataTable({
                    tableIndex : 5,
-				   data : {},
+		   data : {},
                    searchcolumns : ['column1'],
                    orderby : 0,
                    headers : [],
