@@ -1,4 +1,4 @@
-# [jquery-ajax-table-pagination](https://open-source-plugins.github.io/jquery-ajax-table-pagination/)
+# [jquery-ajax-table-pagination](https://all-packages.github.io/jquery-ajax-table-pagination/)
 
 Why This Plugin Developed
 -------------------------
