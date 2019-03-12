@@ -10,7 +10,7 @@ and open the template in the editor.
         <title></title>
         <link href="bootstrap.css" rel="stylesheet" />
         <script src="jquery.min.js"></script>
-        <script src="serverDataTables.js"></script>
+        <script src="globaldatatables.min.js"></script>
         <script src="bootstrap.min.js"></script>
     </head>
     <body>
