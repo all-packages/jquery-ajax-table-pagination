@@ -71,7 +71,7 @@ function datatable(response){
                    return $table;
                }
                ```
- **Data Type - JSON, FULL DATA in single ajax call from server ** 
+ **Data Type - JSON, FULL DATA in single ajax call from server** 
  
  ```html
  $('.datatable1').customeDataTable({
@@ -117,6 +117,7 @@ $('.datatable2').customeDataTable({
                    structure : 'table'
                });
 ```
+
 **Data Type - Table, Html table prepared from server side in sigle ajax call**
 
 ```html
